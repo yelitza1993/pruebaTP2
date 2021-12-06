@@ -1,0 +1,6 @@
+./venv
+./venv/*
+*.weights
+*.jpg
+*.png
+./.git
