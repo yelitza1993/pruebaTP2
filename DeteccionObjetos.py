@@ -79,6 +79,17 @@ def image_detect(img_path):
         if key == 27:
             break
 
+            
+def crear_archivo (diccionario_contador: dict, mensaje: str):
+    # Pre:
+    # Pos: crear un archivo.txt  el cual debera guarda un objeto por color y cantidad
+
+    archivo = open(mensaje, 'w')
+    for clave, valor in diccionario_contador.items():
+        archivo.write(" {} :{}".format(clave, valor) + "\n")
+    archivo.close()
+            
+            
 
 def main():
     image_detect("vasos.jpg")
